@@ -42,8 +42,7 @@ const Hero = () => {
               <img
                 src="/images/hero/RRS%20GIF%20Promo%20for%20Website2.gif"
                 alt="Random Reddit Stumbler Promo"
-                className="rounded-lg shadow-lg max-w-full h-auto"
-                style={{ maxWidth: 600 }}
+                className="rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"
               />
             </div>
           </div>
