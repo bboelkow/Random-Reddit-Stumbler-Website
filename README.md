@@ -1,74 +1,54 @@
-# Startup - Free Next.js Startup Website Template
+# Random Reddit Stumbler - Website
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+This is the official website for the Random Reddit Stumbler browser extension, built with Next.js and TailwindCSS.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## 🚀 About Random Reddit Stumbler
+
+Random Reddit Stumbler is a browser extension that helps you discover Reddit's hidden gems! Break out of your Reddit bubble and explore thousands of communities you'd never find on the front page.
 
 ### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+- **Instant Discovery**: Jump to random subreddits with a single click
+- **Smart Filtering**: Filter by community size to find exactly what you're looking for
+- **Favorites**: Save your discoveries for easy access later
+- **Customizable Experience**: Configure the extension to match your browsing preferences
+- **Free to Use**: Completely free with no required premium features or subscriptions
 
-### 🙌 Detailed comparison between the Free and Pro versions of Startup
+## 🛠️ Website Tech Stack
+- Next.js 15.x
+- TailwindCSS 4.x
+- TypeScript
+- Vercel Deployment
 
-| Feature             | Free | Pro |
-|---------------------|------------|----------|
-| Next.js Landing Page             | ✅ Yes      | ✅ Yes      |
-| All The Integrations - Auth, DB, Payments, Blog and many more ...             | ❌ No      | ✅ Yes |
-| Homepage Variations             | 1      | 2 |
-| Additional SaaS Pages and Components             | ❌ No      | ✅ Yes |
-| Functional Blog with Sanity       | ❌ No      | ✅ Yes | ✅ Yes |
-| Use with Commercial Projects            | ✅ Yes      | ✅ Yes      |
-| Lifetime Free Updates             | ✅ Yes      | ✅ Yes |
-| Email Support       | ❌ No         | ✅ Yes       |
-| Community Support         | ✅ Yes         | ✅ Yes       |
+## 🧩 Extension Availability
 
+The Random Reddit Stumbler browser extension is currently available for:
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/glhocjfoicokdkkbfeaijffjeooledmm?utm_source=item-share-cb)
 
-[![Startup Pro](https://raw.githubusercontent.com/NextJSTemplates/startup-nextjs/main/startup-pro.webp)](https://nextjstemplates.com/templates/saas-starter-startup)
+## 🔧 Development
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+To run the website locally:
 
+```bash
+# Install dependencies
+npm install
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+# Start development server
+npm run dev
+```
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+## 📱 Optimization Notes
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+This website has been optimized for:
+- Performance: Fast loading times with optimized assets
+- Accessibility: Screen reader compatible and keyboard navigable
+- SEO: Structured metadata for better search engine visibility
+- Bandwidth: Video compression for lower data transfer
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+## 📄 License
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+All rights reserved. This codebase is proprietary and not open for redistribution or reuse.
 
-### ⚡ Deploy Now
+## 💬 Contact
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
-
-
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
-
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
-
-### Update Log
-
-**10 April 2025**
-- Fix peer deps issue with Next.js 15
-- Upgrade to tailwind v4
-- Refactored blog cards for handling edge cases(text ellipsis on bio, keeping author details at the bottom etc.)
-- Re-wrote blog details page with icons separation, fallback author image and better markup.
-- Fixed duplicate key errors on homepage.
-- Separated icons on theme-switcher button, and refactored scroll-to-top button.
-
-**29 Jan 2025**
-- Upgraded to Next.js 15
+For questions, feedback, or support regarding the Random Reddit Stumbler extension, please reach out through the website's contact form.
