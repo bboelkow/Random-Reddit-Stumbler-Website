@@ -5,7 +5,8 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
-import { Analytics } from "@vercel/analytics/next"; // Added import
+import { Analytics } from "@vercel/analytics/next"; // Already imported
+import { SpeedInsights } from "@vercel/speed-insights/next"; // Add this import
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,8 @@ export default function RootLayout({
           {children}
           <Footer />
           <ScrollToTop />
-          <Analytics /> {/* Add this line to enable analytics */}
+          <Analytics /> {/* Already included */}
+          <SpeedInsights /> {/* Add this component */}
         </Providers>
       </body>
     </html>

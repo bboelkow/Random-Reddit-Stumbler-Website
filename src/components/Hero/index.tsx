@@ -19,7 +19,7 @@ const Hero = () => {
                   Discover Reddit's hidden gems for free! Instantly jump to random subreddits, filter by size, save favorites, and more with the Random Reddit Stumbler browser extension.
                 </p>
                 <p className="mb-12 text-base leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Break out of your Reddit bubble and explore thousands of communities you'd never find on the front page. One click, endless discovery.
+                  Browse random subreddits and break out of your Reddit bubble by exploring thousands of communities you'd never find on the front page. One click, endless random subreddit discovery.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 lg:justify-start">
                   <Link
