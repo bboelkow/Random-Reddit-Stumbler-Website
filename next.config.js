@@ -28,6 +28,19 @@ const nextConfig = {
         ],
       },
       {
+        source: '/images/hero/(.*).mp4',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'Content-Type',
+            value: 'video/mp4',
+          }
+        ],
+      },
+      {
         source: '/images/hero/(.*).webm',
         headers: [
           {

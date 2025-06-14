@@ -38,7 +38,7 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Video Promo - Replacing GIF */}
+            {/* Video Promo */}
             <div className="mt-12 w-full px-4 lg:mt-0 lg:w-1/2">
               <div className="mx-auto max-w-[600px]">
                 <video 
@@ -48,7 +48,7 @@ const Hero = () => {
                   muted 
                   playsInline
                 >
-                  <source src="/images/hero/RRS-Promo-for-Website2-Webm.webm" type="video/webm" />
+                  <source src="/images/hero/RRS-Promo-for-Website2.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
