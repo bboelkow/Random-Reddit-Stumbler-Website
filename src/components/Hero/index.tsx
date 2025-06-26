@@ -47,14 +47,16 @@ const Hero = () => {
             {/* Video Promo */}
             <div className="mt-16 w-full px-4 lg:mt-0 lg:w-3/5 xl:w-2/3">
               <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-gray-200/50 dark:ring-gray-700/50">
-                <iframe 
-                  className="w-full aspect-video"
-                  src="https://www.youtube.com/embed/nO9ulbPAkKQ?autoplay=1&mute=1&loop=1&playlist=nO9ulbPAkKQ&controls=0&modestbranding=1&rel=0"
-                  title="Random Reddit Stumbler Demo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
+                <video 
+                  className="w-full h-auto"
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                >
+                  <source src="/images/hero/RRS 1.2.1 Promo for Website.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
