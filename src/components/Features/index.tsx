@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Main Features"
-            paragraph="Discover new subreddits instantly with Random Reddit Stumbler for free! Jump to random communities, filter by size or top posts, save your favorites, and enjoy a seamless overlay on any Reddit page. Switch themes, access a huge subreddit database, and unlock NSFW exploration with am affordable premium upgrade."
+            paragraph="Discover Reddit's hidden gems with advanced search, keyboard shortcuts, and multiple discovery modes! Real-time search with smart sorting, advanced favorites system with multiple lists, convenient overlay mode, and comprehensive keyboard navigation. Browse 260,000+ subreddits and 10,000+ creators with lightning-fast performance and enhanced security features."
             center
           />
 

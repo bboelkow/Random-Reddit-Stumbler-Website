@@ -22,12 +22,12 @@ export default function Video() {
         <div className="relative overflow-hidden">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[770px] overflow-hidden rounded-md">
-                <div className="relative aspect-77/40 items-center justify-center">
+              <div className="mx-auto max-w-[1000px] overflow-hidden rounded-md">
+                <div className="relative aspect-video items-center justify-center">
                   {!isPlaying ? (
                     <>
                       <img
-                        src="https://img.youtube.com/vi/QdepFauSWnY/hqdefault.jpg"
+                        src="https://img.youtube.com/vi/nO9ulbPAkKQ/hqdefault.jpg"
                         alt="YouTube video thumbnail"
                         className="object-cover w-full h-full"
                         style={{ display: "block" }}
@@ -53,7 +53,7 @@ export default function Video() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://www.youtube.com/embed/QdepFauSWnY?autoplay=1"
+                      src="https://www.youtube.com/embed/nO9ulbPAkKQ?autoplay=1"
                       title="YouTube video player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

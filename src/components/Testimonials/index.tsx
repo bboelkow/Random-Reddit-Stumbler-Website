@@ -8,7 +8,6 @@ const testimonialData: Testimonial[] = [
     name: "Brian",
     content:
       "It is really fun to browse Reddit this way and to find subreddits I never knew existed! I have found multiple new interests. Excited for future updates.",
-    image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
@@ -16,7 +15,6 @@ const testimonialData: Testimonial[] = [
     name: "Ziar",
     content:
       "I use it discover random subreddits based and view their top posts... It's a great tool for exploring niche communities I might never stumble upon otherwise.",
-    image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
@@ -24,7 +22,6 @@ const testimonialData: Testimonial[] = [
     name: "Hary",
     content:
       'The Random Reddit Stumbler is a fantastic tool for anyone looking to break free from the Reddit echo chamber. Perfect for curious minds and Reddit veterans alike, highly recommended!',
-    image: "/images/testimonials/auth-03.png",
     star: 5,
   },
 ];

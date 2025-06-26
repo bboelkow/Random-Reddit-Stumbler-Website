@@ -6,13 +6,12 @@ import PricingBox from "./PricingBox";
 const Pricing = () => {
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
-      <div className="container">
-        <SectionTitle
-          title="Simple and Affordable Premium Pricing"
-          paragraph="Random Reddit Stumbler is free but has additional premium features. Premium users unlock two new features; NSFW mode and NSFW Creator mode. These features allow you stumble through over 10,000 NSFW subreddits and over 10,000 NSFW creators. Replace your onlyfans subscriptions!"
-          center
-          width="665px"
-        />
+      <div className="container">          <SectionTitle
+            title="Simple and Affordable Premium Pricing"
+            paragraph="Random Reddit Stumbler is free with advanced features! Premium users unlock NSFW mode and NSFW Creator mode, accessing 10,000+ carefully curated NSFW subreddits and creators. Enjoy advanced search through ALL subreddits (SFW + NSFW), multiple specialized favorites lists, and age-verified content for adults only."
+            center
+            width="665px"
+          />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
@@ -21,8 +20,11 @@ const Pricing = () => {
             duration="mo"
             subtitle="Billed monthly. Cancel anytime."
           >
-            <OfferList text="NSFW Mode" status="active" />
-            <OfferList text="NSFW Creator Mode" status="active" />
+            <OfferList text="NSFW Mode (10,000+ subreddits)" status="active" />
+            <OfferList text="NSFW Creator Mode (10,000+ creators)" status="active" />
+            <OfferList text="Advanced Search (All subreddits)" status="active" />
+            <OfferList text="Multiple Favorites Lists" status="active" />
+            <OfferList text="Age-Verified Content" status="active" />
             <OfferList text="Free Updates" status="active" />
             <OfferList text="Lifetime Access" status="inactive" />
           </PricingBox>
@@ -32,8 +34,11 @@ const Pricing = () => {
             duration="yr"
             subtitle="Billed yearly. Save over 50%."
           >
-            <OfferList text="NSFW Mode" status="active" />
-            <OfferList text="NSFW Creator Mode" status="active" />
+            <OfferList text="NSFW Mode (10,000+ subreddits)" status="active" />
+            <OfferList text="NSFW Creator Mode (10,000+ creators)" status="active" />
+            <OfferList text="Advanced Search (All subreddits)" status="active" />
+            <OfferList text="Multiple Favorites Lists" status="active" />
+            <OfferList text="Age-Verified Content" status="active" />
             <OfferList text="Free Updates" status="active" />
             <OfferList text="Lifetime Access" status="inactive" />
           </PricingBox>
@@ -43,8 +48,11 @@ const Pricing = () => {
             duration="lifetime"
             subtitle="One-time payment. Best value."
           >
-            <OfferList text="NSFW Mode" status="active" />
-            <OfferList text="NSFW Creator Mode" status="active" />
+            <OfferList text="NSFW Mode (10,000+ subreddits)" status="active" />
+            <OfferList text="NSFW Creator Mode (10,000+ creators)" status="active" />
+            <OfferList text="Advanced Search (All subreddits)" status="active" />
+            <OfferList text="Multiple Favorites Lists" status="active" />
+            <OfferList text="Age-Verified Content" status="active" />
             <OfferList text="Free Updates" status="active" />
             <OfferList text="Lifetime Access" status="active" />
           </PricingBox>

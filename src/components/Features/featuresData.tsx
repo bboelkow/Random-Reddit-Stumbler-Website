@@ -14,10 +14,25 @@ const featuresData: Feature[] = [
     ),
     title: "One-Click Random Exploration",
     paragraph:
-      "Instantly jump to a random subreddit with a single button click — no login needed!",
+      "Instantly jump to a random subreddit with a single button click — no login needed! Switch between subreddit and creator discovery modes.",
   },
   {
     id: 2,
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M37.5 37.5L29.5 29.5C31.5 27 32.5 23.5 32.5 20C32.5 12.5 26.5 6.5 20 6.5C13.5 6.5 7.5 12.5 7.5 20C7.5 27.5 13.5 33.5 20 33.5C23.5 33.5 27 32.5 29.5 29.5L37.5 37.5Z"
+        />
+        <path d="M20 2.5C12.5 2.5 6.5 8.5 6.5 16C6.5 23.5 12.5 29.5 20 29.5C23.5 29.5 26.5 28.5 29 26.5L37 34.5C37.5 35 38.5 35 39 34.5C39.5 34 39.5 33 39 32.5L31 24.5C33 22 34 18.5 34 15C34 7.5 28 1.5 20 1.5Z" />
+      </svg>
+    ),
+    title: "Advanced Search",
+    paragraph:
+      "Real-time subreddit search with highlighted results, smart sorting, and keyboard shortcuts (Ctrl/Cmd + K to focus, Enter to select). The search results shows all subreddits with your keyword, not just a couple like Reddit's search.",
+  },
+  {
+    id: 3,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -29,10 +44,10 @@ const featuresData: Feature[] = [
     ),
     title: "Convenient Overlay Mode",
     paragraph:
-      "Toggle an always-accessible overlay on any Reddit page for quick stumbling without opening the extension.",
+      "Toggle an always-accessible overlay on any Reddit page for quick stumbling. Responsive design with mode indicators showing current mode (SFW/NSFW/Creator).",
   },
   {
-    id: 3,
+    id: 4,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -42,12 +57,72 @@ const featuresData: Feature[] = [
         <path d="M20 15C22.75 15 25 17.25 25 20C25 22.75 22.75 25 20 25C17.25 25 15 22.75 15 20C15 17.25 17.25 15 20 15ZM20 0C22.75 0 25 2.25 25 5C25 7.75 22.75 10 20 10C17.25 10 15 7.75 15 5C15 2.25 17.25 0 20 0ZM5 30C7.75 30 10 32.25 10 35C10 37.75 7.75 40 5 40C2.25 40 0 37.75 0 35C0 32.25 2.25 30 5 30ZM5 15C7.75 15 10 17.25 10 20C10 22.75 7.75 25 5 25C2.25 25 0 22.75 0 20C0 17.25 2.25 15 5 15ZM5 0C7.75 0 10 2.25 10 5C10 7.75 7.75 10 5 10C2.25 10 0 7.75 0 5C0 2.25 2.25 0 5 0ZM35 0C37.75 0 40 2.25 40 5C40 7.75 37.75 10 35 10C32.25 10 30 7.75 30 5C30 2.25 32.25 0 35 0Z" />
       </svg>
     ),
-    title: "Create a Favorite Subreddit List",
+    title: "Advanced Favorites System",
     paragraph:
-      "Save your discoveries by adding great finds to your favorites list for easy access later.",
+      "Save your discoveries with multiple favorites lists for SFW, NSFW subreddits, and NSFW creators. Randomly browse through your saved communities with smart organization.",
   },
   {
-    id: 4,
+    id: 5,
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M8 8h24c1.1 0 2 .9 2 2v20c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2z"
+        />
+        <path d="M8 6C5.79 6 4 7.79 4 10v20c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4H8zm4 8h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-16 4h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h12v2H16v-2zm-8 4h2v2H8v-2zm4 0h16v2H12v-2z" />
+      </svg>
+    ),
+    title: "Keyboard Shortcuts & Performance",
+    paragraph:
+      "Full keyboard navigation with shortcuts: Ctrl/Cmd + K to focus search, Ctrl/Cmd + R for random, Enter to select. Lightning fast with optimized search, smart caching, and XSS protection.",
+  },
+  {
+    id: 6,
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M39 12C39.5523 12 40 12.4477 40 13V39C40 39.5523 39.5523 40 39 40H13C12.4477 40 12 39.5523 12 39V33C12 32.4477 12.4477 32 13 32H31C31.5523 32 32 31.5523 32 31V13C32 12.4477 32.4477 12 33 12H39Z"
+        />
+        <rect width="28" height="28" rx="1" />
+      </svg>
+    ),
+    title: "Theme & Accessibility",
+    paragraph:
+      "Dark/Light mode toggle with full keyboard navigation, screen reader support, and responsive design that works seamlessly on all screen sizes.",
+  },
+  {
+    id: 7,
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M20 5C27.732 5 34 11.268 34 19s-6.268 14-14 14S6 26.732 6 19 12.268 5 20 5zm0 4c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S25.523 9 20 9z"
+        />
+        <path d="M20 1C30.493 1 39 9.507 39 20s-8.507 19-19 19S1 30.493 1 20 9.507 1 20 1zm0 4C11.716 5 5 11.716 5 20s6.716 15 15 15 15-6.716 15-15S28.284 5 20 5zm0 8c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7zm0 2c-2.761 0-5 2.239-5 5s2.239 5 5 5 5-2.239 5-5-2.239-5-5-5z" />
+      </svg>
+    ),
+    title: "Massive Database",
+    paragraph:
+      "Browse through the top 250,000 SFW subreddits with regular database updates. Premium users get access to 10,000+ curated NSFW communities and creators with karma-based filtering.",
+  },
+  {
+    id: 8,
+    icon: (
+      <svg width="40" height="45" viewBox="0 0 40 45" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M31.579 37.8948C28.6737 37.8948 26.3158 35.5369 26.3158 32.6317C26.3158 31.9159 26.4527 31.2306 26.7135 30.6015C26.7959 30.4027 26.7605 30.1711 26.6083 30.019L24.9997 28.4103C24.7766 28.1872 24.4043 28.2238 24.2487 28.4983C23.5588 29.7145 23.1579 31.125 23.1579 32.6317C23.1579 37.2843 26.9263 41.0527 31.579 41.0527V43.0035C31.579 43.449 32.1175 43.6721 32.4325 43.3571L35.9622 39.8273C36.1575 39.6321 36.1575 39.3155 35.9622 39.1202L32.4325 35.5905C32.1175 35.2755 31.579 35.4986 31.579 35.9441V37.8948ZM31.579 24.2106V22.2598C31.579 21.8144 31.0404 21.5913 30.7254 21.9063L27.1957 25.436C27.0004 25.6313 27.0004 25.9479 27.1957 26.1431L30.7254 29.6729C31.0404 29.9879 31.579 29.7648 31.579 29.3193V27.3685C34.4842 27.3685 36.8421 29.7264 36.8421 32.6317C36.8421 33.3474 36.7052 34.0328 36.4444 34.6618C36.362 34.8606 36.3974 35.0922 36.5496 35.2444L38.1582 36.853C38.3813 37.0762 38.7536 37.0396 38.9092 36.7651C39.5991 35.5488 40 34.1384 40 32.6317C40 27.9791 36.2316 24.2106 31.579 24.2106Z"
+        />
+        <path d="M18.9474 32.6316C18.9474 35.4705 19.8099 38.0969 21.2941 40.2796C21.7904 41.0094 21.3054 42.1053 20.4229 42.1053H4.21053C1.87368 42.1053 0 40.2316 0 37.8947V4.21053C0 1.89474 1.87368 0 4.21053 0H6.31579H16.8421H29.4737C31.7895 0 33.6842 1.87368 33.6842 4.21053V17.9544C33.6842 18.5032 33.1804 18.9474 32.6316 18.9474C25.0737 18.9474 18.9474 25.0737 18.9474 32.6316Z" />
+      </svg>
+    ),
+    title: "Break out of your Algorithm Bubble",
+    paragraph:
+      "Perfect for discovering niche communities, finding content creators you'd never see otherwise, and adding variety to your Reddit experience. Ideal for researchers and content creators seeking inspiration.",
+  },
+  {
+    id: 9,
     icon: (
       <svg width="40" height="42" viewBox="0 0 40 42" className="fill-current">
         <path
@@ -60,36 +135,6 @@ const featuresData: Feature[] = [
     title: "Advanced Filtering Options",
     paragraph:
       "Filters include subscriber counts, top posts in given time period, and NSFW Mode for premium users. Find tiny communities with under 1,000 members or massive ones with over 1 million.",
-  },
-  {
-    id: 5,
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
-        <path
-          opacity="0.5"
-          d="M39 12C39.5523 12 40 12.4477 40 13V39C40 39.5523 39.5523 40 39 40H13C12.4477 40 12 39.5523 12 39V33C12 32.4477 12.4477 32 13 32H31C31.5523 32 32 31.5523 32 31V13C32 12.4477 32.4477 12 33 12H39Z"
-        />
-        <rect width="28" height="28" rx="1" />
-      </svg>
-    ),
-    title: "Theme Options",
-    paragraph:
-      "Easily switch between light and dark themes to match your browsing preferences.",
-  },
-  {
-    id: 6,
-    icon: (
-      <svg width="40" height="45" viewBox="0 0 40 45" className="fill-current">
-        <path
-          opacity="0.5"
-          d="M31.579 37.8948C28.6737 37.8948 26.3158 35.5369 26.3158 32.6317C26.3158 31.9159 26.4527 31.2306 26.7135 30.6015C26.7959 30.4027 26.7605 30.1711 26.6083 30.019L24.9997 28.4103C24.7766 28.1872 24.4043 28.2238 24.2487 28.4983C23.5588 29.7145 23.1579 31.125 23.1579 32.6317C23.1579 37.2843 26.9263 41.0527 31.579 41.0527V43.0035C31.579 43.449 32.1175 43.6721 32.4325 43.3571L35.9622 39.8273C36.1575 39.6321 36.1575 39.3155 35.9622 39.1202L32.4325 35.5905C32.1175 35.2755 31.579 35.4986 31.579 35.9441V37.8948ZM31.579 24.2106V22.2598C31.579 21.8144 31.0404 21.5913 30.7254 21.9063L27.1957 25.436C27.0004 25.6313 27.0004 25.9479 27.1957 26.1431L30.7254 29.6729C31.0404 29.9879 31.579 29.7648 31.579 29.3193V27.3685C34.4842 27.3685 36.8421 29.7264 36.8421 32.6317C36.8421 33.3474 36.7052 34.0328 36.4444 34.6618C36.362 34.8606 36.3974 35.0922 36.5496 35.2444L38.1582 36.853C38.3813 37.0762 38.7536 37.0396 38.9092 36.7651C39.5991 35.5488 40 34.1384 40 32.6317C40 27.9791 36.2316 24.2106 31.579 24.2106Z"
-        />
-        <path d="M18.9474 32.6316C18.9474 35.4705 19.8099 38.0969 21.2941 40.2796C21.7904 41.0094 21.3054 42.1053 20.4229 42.1053H4.21053C1.87368 42.1053 0 40.2316 0 37.8947V4.21053C0 1.89474 1.87368 0 4.21053 0H6.31579H16.8421H29.4737C31.7895 0 33.6842 1.87368 33.6842 4.21053V17.9544C33.6842 18.5032 33.1804 18.9474 32.6316 18.9474C25.0737 18.9474 18.9474 25.0737 18.9474 32.6316Z" />
-      </svg>
-    ),
-    title: "Break out of your Algorithm Bubble",
-    paragraph:
-      "Harness the ability to explore subreddits outside your usual interests. Discover new communities and broaden your Reddit experience.",
   },
 ];
 export default featuresData;

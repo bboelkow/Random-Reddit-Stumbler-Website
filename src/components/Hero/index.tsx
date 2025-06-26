@@ -8,29 +8,35 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center justify-center">
+          <div className="-mx-4 flex flex-wrap items-center justify-center lg:items-start">
             {/* Text Content */}
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-2/5 xl:w-1/3">
               <div className="mx-auto max-w-[600px] text-center lg:text-left">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                <h1 className="mb-6 text-4xl font-bold leading-tight text-black dark:text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight">
                   Random Reddit Stumbler
                 </h1>
-                <p className="mb-8 text-lg leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl md:text-2xl">
-                  Discover Reddit's hidden gems for free! Instantly jump to random subreddits, filter by size, save favorites, and more with the Random Reddit Stumbler browser extension.
+                <p className="mb-6 text-lg leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl">
+                  Discover Reddit's hidden gems with advanced search, keyboard shortcuts, and multiple discovery modes!
                 </p>
-                <p className="mb-12 text-base leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Browse random subreddits and break out of your Reddit bubble by exploring thousands of communities you'd never find on the front page. One click, endless random subreddit discovery.
+                <p className="mb-8 text-base leading-relaxed text-body-color/80 dark:text-body-color-dark/80">
+                  Browse random subreddits and break out of your Reddit bubble by exploring thousands of communities you'd never find on the front page. Available for Chrome, Firefox, Edge, Opera, Brave and more!
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 lg:justify-start">
+                <div className="flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
                   <Link
                     href="https://chromewebstore.google.com/detail/glhocjfoicokdkkbfeaijffjeooledmm?utm_source=item-share-cb"
-                    className="rounded-xs bg-orange-600 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-orange-700"
+                    className="inline-flex items-center justify-center rounded-lg bg-orange-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:-translate-y-0.5"
                   >
                     Install on Chrome
                   </Link>
                   <Link
+                    href="https://addons.mozilla.org/en-US/firefox/addon/random-reddit-stumbler/"
+                    className="inline-flex items-center justify-center rounded-lg bg-orange-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:-translate-y-0.5"
+                  >
+                    Install on Firefox
+                  </Link>
+                  <Link
                     href="#features"
-                    className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    className="inline-flex items-center justify-center rounded-lg border-2 border-gray-200 bg-white px-6 py-3 text-sm font-semibold text-gray-700 transition-all duration-300 ease-in-out hover:border-gray-300 hover:shadow-lg hover:-translate-y-0.5 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 dark:hover:border-gray-500"
                   >
                     See Features
                   </Link>
@@ -39,18 +45,16 @@ const Hero = () => {
             </div>
             
             {/* Video Promo */}
-            <div className="mt-12 w-full px-4 lg:mt-0 lg:w-1/2">
-              <div className="mx-auto max-w-[600px]">
-                <video 
-                  className="w-full rounded-lg shadow-lg"
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                >
-                  <source src="/images/hero/RRS-Promo-for-Website2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            <div className="mt-16 w-full px-4 lg:mt-0 lg:w-3/5 xl:w-2/3">
+              <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-gray-200/50 dark:ring-gray-700/50">
+                <iframe 
+                  className="w-full aspect-video"
+                  src="https://www.youtube.com/embed/nO9ulbPAkKQ?autoplay=1&mute=1&loop=1&playlist=nO9ulbPAkKQ&controls=0&modestbranding=1&rel=0"
+                  title="Random Reddit Stumbler Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
               </div>
             </div>
           </div>
