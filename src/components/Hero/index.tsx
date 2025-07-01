@@ -16,7 +16,7 @@ const Hero = () => {
                   Random Reddit Stumbler
                 </h1>
                 <p className="mb-6 text-lg leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl">
-                  Discover Reddit's hidden gems with advanced search, keyboard shortcuts, and multiple discovery modes!
+                  Discover Reddit's hidden gems with the click of a button! Use Random Reddit Stumbler to explore thousands of subreddits you never knew existed. Find a random subreddit to spark a new interest has never been easier!
                 </p>
                 <p className="mb-8 text-base leading-relaxed text-body-color/80 dark:text-body-color-dark/80">
                   Browse random subreddits and break out of your Reddit bubble by exploring thousands of communities you'd never find on the front page. Available for Chrome, Firefox, Edge, Opera, Brave and more!
