@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const Hero = () => {
@@ -21,16 +23,53 @@ const Hero = () => {
                 <p className="mb-8 text-base leading-relaxed text-body-color/80 dark:text-body-color-dark/80">
                   Browse random subreddits and break out of your Reddit bubble by exploring thousands of communities you'd never find on the front page. Available for Chrome, Firefox, Edge, Opera, Brave and more!
                 </p>
-                <div className="flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
-                  <Link
+                <div className="flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">                  <Link
                     href="https://chromewebstore.google.com/detail/glhocjfoicokdkkbfeaijffjeooledmm?utm_source=item-share-cb"
-                    className="inline-flex items-center justify-center rounded-lg bg-orange-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:-translate-y-0.5"
+                    className="hero-button inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-0.5"
+                    style={{ 
+                      backgroundColor: '#ea580c', 
+                      borderColor: '#ea580c',
+                      border: '2px solid #ea580c',
+                      backgroundImage: 'none',
+                      boxShadow: 'none',
+                      color: 'white',
+                      background: '#ea580c'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#c2410c';
+                      e.currentTarget.style.borderColor = '#c2410c';
+                      e.currentTarget.style.background = '#c2410c';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ea580c';
+                      e.currentTarget.style.borderColor = '#ea580c';
+                      e.currentTarget.style.background = '#ea580c';
+                    }}
                   >
                     Install on Chrome
                   </Link>
                   <Link
                     href="https://addons.mozilla.org/en-US/firefox/addon/random-reddit-stumbler/"
-                    className="inline-flex items-center justify-center rounded-lg bg-orange-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:-translate-y-0.5"
+                    className="hero-button inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-0.5"
+                    style={{ 
+                      backgroundColor: '#ea580c', 
+                      borderColor: '#ea580c',
+                      border: '2px solid #ea580c',
+                      backgroundImage: 'none',
+                      boxShadow: 'none',
+                      color: 'white',
+                      background: '#ea580c'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#c2410c';
+                      e.currentTarget.style.borderColor = '#c2410c';
+                      e.currentTarget.style.background = '#c2410c';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ea580c';
+                      e.currentTarget.style.borderColor = '#ea580c';
+                      e.currentTarget.style.background = '#ea580c';
+                    }}
                   >
                     Install on Firefox
                   </Link>

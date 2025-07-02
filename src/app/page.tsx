@@ -11,9 +11,9 @@ import FAQ from "@/components/FAQ";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Random Reddit Stumbler – Discover new Subreddits with a click!",
+  title: "Random Reddit Stumbler – Find random subreddits with a click!",
   description:
-    "Discover Reddit's hidden gems for free! Instantly jump to random subreddits, filter by size, save favorites, browse favorites, and more with the Random Reddit Stumbler browser extension.",
+    "Add a random subreddit button to Reddit for free! Instantly jump to random subreddits using the random subreddit generator, filter by size, save favorites, browse favorites, and more with the Random Reddit Stumbler browser extension.",
 };
 
 export default function Home() {

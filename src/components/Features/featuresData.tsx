@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
     ),
     title: "One-Click Random Exploration",
     paragraph:
-      "Instantly jump to a random subreddit with a single button click — no login needed! Switch between subreddit and creator discovery modes.",
+      "Click the random subreddit button to instantly jump to a random subreddit using the random subreddit generator — no login needed! Switch between subreddit and creator discovery modes to find a truly random reddit page.",
   },
   {
     id: 2,

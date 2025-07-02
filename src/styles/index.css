@@ -126,10 +126,169 @@ layer(base);
   body {
     font-family: "Inter", sans-serif;
   }
+  
+  /* Browser compatibility fixes */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /* Force hardware acceleration for smoother animations */
+  .transition-all {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
+  /* Ensure consistent button rendering across browsers */
+  button, 
+  [role="button"],
+  input[type="button"],
+  input[type="submit"],
+  a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  /* Fix for Chrome/Brave rendering issues with background colors */
+  .hero-button {
+    background-clip: padding-box !important;
+    border-style: solid !important;
+    transform: translateZ(0);
+  }
+  
+  /* Force consistent color rendering across browsers */
+  * {
+    color-scheme: light dark;
+  }
+  
+  /* Disable Chrome's form styling */
+  input, textarea, select, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  /* Ensure consistent link styling */
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 }
 
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
+  }
+  
+  /* Specific styles for hero buttons to ensure cross-browser compatibility */
+  .hero-button {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #ea580c !important;
+    background-color: #ea580c !important;
+    background-image: none !important;
+    border: 2px solid #ea580c !important;
+    border-color: #ea580c !important;
+    color: white !important;
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* Force specific properties for Chrome/Brave */
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    /* Disable any potential extension interference */
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    /* Force the color rendering */
+    forced-color-adjust: none;
+  }
+  
+  .hero-button:hover {
+    background: #c2410c !important;
+    background-color: #c2410c !important;
+    background-image: none !important;
+    border-color: #c2410c !important;
+    color: white !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+  }
+  
+  .hero-button:focus {
+    outline: 2px solid #ea580c !important;
+    outline-offset: 2px !important;
+    background: #ea580c !important;
+    background-color: #ea580c !important;
+    background-image: none !important;
+    border-color: #ea580c !important;
+    color: white !important;
+  }
+  
+  .hero-button:active {
+    background: #c2410c !important;
+    background-color: #c2410c !important;
+    background-image: none !important;
+    border-color: #c2410c !important;
+    color: white !important;
+    transform: translateY(1px);
+  }
+  
+  /* Override any potential ad-blocker or extension styling */
+  .hero-button[style] {
+    background: #ea580c !important;
+    background-color: #ea580c !important;
+    border-color: #ea580c !important;
+    color: white !important;
+  }
+  
+  /* Chrome/Webkit specific fixes */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .hero-button {
+      background: #ea580c !important;
+      background-color: #ea580c !important;
+      -webkit-background-color: #ea580c !important;
+      border-color: #ea580c !important;
+      color: white !important;
+      -webkit-text-fill-color: white !important;
+    }
+    
+    .hero-button:hover {
+      background: #c2410c !important;
+      background-color: #c2410c !important;
+      -webkit-background-color: #c2410c !important;
+      border-color: #c2410c !important;
+      color: white !important;
+      -webkit-text-fill-color: white !important;
+    }
+  }
+  
+  /* Firefox specific fixes */
+  @-moz-document url-prefix() {
+    .hero-button {
+      background: #ea580c !important;
+      background-color: #ea580c !important;
+      border-color: #ea580c !important;
+      color: white !important;
+    }
+    
+    .hero-button:hover {
+      background: #c2410c !important;
+      background-color: #c2410c !important;
+      border-color: #c2410c !important;
+      color: white !important;
+    }
   }
 }
