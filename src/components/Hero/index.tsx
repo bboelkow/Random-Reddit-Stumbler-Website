@@ -18,10 +18,10 @@ const Hero = () => {
                   Random Reddit Stumbler
                 </h1>
                 <p className="mb-6 text-lg leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl">
-                  Discover Reddit's hidden gems with the click of a button! Use Random Reddit Stumbler to explore thousands of subreddits you never knew existed. Finding a random subreddit to spark a new interest has never been easier!
+                  Add a random subreddit button to Reddit! Use Random Reddit Stumbler to explore thousands of subreddits you never knew existed. Finding a random subreddit to spark a new interest has never been easier!
                 </p>
                 <p className="mb-8 text-base leading-relaxed text-body-color/80 dark:text-body-color-dark/80">
-                  Browse random subreddits and break out of your Reddit bubble by exploring thousands of communities you'd never find on the front page. Available for Chrome, Firefox, Edge, Opera, Brave and more!
+                  Find something you like? Add it to a favorites list and browse directly from the list you created! Available for Chrome, Firefox, Edge, Opera, Brave and more!
                 </p>
                 <div className="flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">                  <Link
                     href="https://chromewebstore.google.com/detail/glhocjfoicokdkkbfeaijffjeooledmm?utm_source=item-share-cb"
