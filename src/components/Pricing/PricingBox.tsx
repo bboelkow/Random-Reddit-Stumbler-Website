@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 
 const PricingBox = (props: {
   price: string;
@@ -18,24 +18,22 @@ const PricingBox = (props: {
     }
   };
 
-  const handlePremiumAccess = () => {
-    if (typeof window !== 'undefined') {
-      window.open(
-        "https://extensionpay.com/extension/random-reddit-stumbler/choose-plan?api_key=12057d33-a93d-491a-bf6c-462cc58e5f8e",
-        "_blank"
-      );
-    }
-  };
+
 
   return (
     <div className="w-full">
       <div className="shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xs bg-white px-8 py-10">
         <div className="flex items-center justify-between">
           <h3 className="price mb-2 text-[32px] font-bold text-black dark:text-white">
-            $<span className="amount">{price}</span>
-            <span className="time text-body-color text-lg font-medium">
-              /{duration}
-            </span>
+            ${price}
+            {duration !== "lifetime" && duration !== "forever" && (
+              <span className="time text-body-color text-lg font-medium">
+                /{duration}
+              </span>
+            )}
+            {duration === "lifetime" && (
+              <span className="time text-body-color text-lg font-medium"> lifetime</span>
+            )}
           </h3>
           <h4 className="text-dark mb-2 text-xl font-bold dark:text-white">
             {packageName}
@@ -49,13 +47,6 @@ const PricingBox = (props: {
             onClick={handleExtensionDownload}
           >
             Extension Download
-          </button>
-          <button
-            type="button"
-            className="bg-secondary/80 hover:shadow-signUp w-full items-center justify-center rounded-xs p-3 text-base font-semibold text-secondary border border-secondary transition duration-300 ease-in-out dark:text-white text-black cursor-pointer"
-            onClick={handlePremiumAccess}
-          >
-            Premium Access
           </button>
         </div>
         <div>{children}</div>

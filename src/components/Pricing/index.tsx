@@ -31,8 +31,8 @@ const Pricing = () => {
           <PricingBox
             packageName="Premium"
             price="0.99"
-            duration="mo / $4.99 yr"
-            subtitle="Monthly or yearly billing. Save 50% with yearly."
+            duration="month"
+            subtitle="$0.99/month or $4.99/year. Save 50% with yearly billing."
           >
             <OfferList text="NSFW Mode (80,000+ subreddits)" status="active" />
             <OfferList text="NSFW Creator Mode (7,000+ creators)" status="active" />
