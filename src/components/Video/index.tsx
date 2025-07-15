@@ -27,7 +27,7 @@ export default function Video() {
                   {!isPlaying ? (
                     <>
                       <img
-                        src="https://img.youtube.com/vi/nO9ulbPAkKQ/hqdefault.jpg"
+                        src="https://img.youtube.com/vi/45TGyuznh7w/hqdefault.jpg"
                         alt="YouTube video thumbnail"
                         className="object-cover w-full h-full"
                         style={{ display: "block" }}
@@ -53,7 +53,7 @@ export default function Video() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://www.youtube.com/embed/nO9ulbPAkKQ?autoplay=1"
+                      src="https://www.youtube.com/embed/45TGyuznh7w?autoplay=1"
                       title="YouTube video player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

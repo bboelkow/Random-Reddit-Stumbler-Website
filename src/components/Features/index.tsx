@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Main Features"
-            paragraph="Discover Reddit's hidden gems with advanced search, keyboard shortcuts, and multiple discovery modes! Real-time search with smart sorting, advanced favorites system with multiple lists, convenient overlay mode, and comprehensive keyboard navigation. Browse 260,000+ subreddits and 10,000+ creators with lightning-fast performance and enhanced security features."
+            paragraph="Discover Reddit's hidden gems with multiple Reddit enhancing features! Enhance your Reddit experience by utilizing an advanced overlay system, keyboard shortcuts, custom subreddit favorites lists, custom feeds, a better search bar, and much more! Browse randomly through 250,000+ SFW subreddits and 80,000+ NSFW communities with lightning-fast performance and enhanced security features."
             center
           />
 

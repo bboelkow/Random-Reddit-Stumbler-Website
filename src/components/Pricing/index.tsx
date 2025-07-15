@@ -15,27 +15,27 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Monthly"
-            price="0.99"
-            duration="mo"
-            subtitle="Billed monthly. Cancel anytime."
+            packageName="Free"
+            price="0"
+            duration="forever"
+            subtitle="No credit card required. Start exploring now."
           >
-            <OfferList text="NSFW Mode (10,000+ subreddits)" status="active" />
-            <OfferList text="NSFW Creator Mode (10,000+ creators)" status="active" />
-            <OfferList text="Advanced Search (All subreddits)" status="active" />
-            <OfferList text="Multiple Favorites Lists" status="active" />
-            <OfferList text="Age-Verified Content" status="active" />
-            <OfferList text="Free Updates" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
+            <OfferList text="SFW Mode (250,000+ subreddits)" status="active" />
+            <OfferList text="SFW Search Bar" status="active" />
+            <OfferList text="One Favorites List" status="active" />
+            <OfferList text="Basic Random Discovery" status="active" />
+            <OfferList text="Overlay Mode" status="active" />
+            <OfferList text="NSFW Mode" status="inactive" />
+            <OfferList text="NSFW Creator Mode" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Yearly"
-            price="4.99"
-            duration="yr"
-            subtitle="Billed yearly. Save over 50%."
+            packageName="Premium"
+            price="0.99"
+            duration="mo / $4.99 yr"
+            subtitle="Monthly or yearly billing. Save 50% with yearly."
           >
-            <OfferList text="NSFW Mode (10,000+ subreddits)" status="active" />
-            <OfferList text="NSFW Creator Mode (10,000+ creators)" status="active" />
+            <OfferList text="NSFW Mode (80,000+ subreddits)" status="active" />
+            <OfferList text="NSFW Creator Mode (7,000+ creators)" status="active" />
             <OfferList text="Advanced Search (All subreddits)" status="active" />
             <OfferList text="Multiple Favorites Lists" status="active" />
             <OfferList text="Age-Verified Content" status="active" />
@@ -48,8 +48,8 @@ const Pricing = () => {
             duration="lifetime"
             subtitle="One-time payment. Best value."
           >
-            <OfferList text="NSFW Mode (10,000+ subreddits)" status="active" />
-            <OfferList text="NSFW Creator Mode (10,000+ creators)" status="active" />
+            <OfferList text="NSFW Mode (80,000+ subreddits)" status="active" />
+            <OfferList text="NSFW Creator Mode (7,000+ creators)" status="active" />
             <OfferList text="Advanced Search (All subreddits)" status="active" />
             <OfferList text="Multiple Favorites Lists" status="active" />
             <OfferList text="Age-Verified Content" status="active" />

@@ -85,7 +85,7 @@ const Hero = () => {
             
             {/* Video Promo */}
             <div className="mt-16 w-full px-4 lg:mt-0 lg:w-3/5 xl:w-2/3">
-              <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-gray-200/50 dark:ring-gray-700/50">
+              <div className="mx-auto max-w-[800px] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-gray-200/50 dark:ring-gray-700/50">
                 <video 
                   className="w-full h-auto"
                   autoPlay 
@@ -93,7 +93,7 @@ const Hero = () => {
                   muted 
                   playsInline
                 >
-                  <source src="/images/hero/RRS 1.2.1 Promo for Website.mp4" type="video/mp4" />
+                  <source src="/images/hero/RRS 1.3.0 Promo for Website2_compressed.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

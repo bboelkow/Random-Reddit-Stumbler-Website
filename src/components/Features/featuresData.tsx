@@ -27,9 +27,9 @@ const featuresData: Feature[] = [
         <path d="M20 2.5C12.5 2.5 6.5 8.5 6.5 16C6.5 23.5 12.5 29.5 20 29.5C23.5 29.5 26.5 28.5 29 26.5L37 34.5C37.5 35 38.5 35 39 34.5C39.5 34 39.5 33 39 32.5L31 24.5C33 22 34 18.5 34 15C34 7.5 28 1.5 20 1.5Z" />
       </svg>
     ),
-    title: "Advanced Search",
+    title: "Advanced Search & Real-Time Discovery",
     paragraph:
-      "Real-time subreddit search with highlighted results, smart sorting, and keyboard shortcuts (Ctrl/Cmd + K to focus, Enter to select). The search results shows all subreddits with your keyword, not just a couple like Reddit's search.",
+      "Real-time subreddit search with highlighted results, smart sorting, and comprehensive keyboard shortcuts (Ctrl/Cmd + K to focus, Enter to select). The search results show all subreddits with your keyword, not just a couple like Reddit's search.",
   },
   {
     id: 3,
@@ -67,14 +67,14 @@ const featuresData: Feature[] = [
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
           opacity="0.5"
-          d="M8 8h24c1.1 0 2 .9 2 2v20c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2z"
+          d="M6 8H34C35.1 8 36 8.9 36 10V30C36 31.1 35.1 32 34 32H6C4.9 32 4 31.1 4 30V10C4 8.9 4.9 8 6 8Z"
         />
-        <path d="M8 6C5.79 6 4 7.79 4 10v20c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4H8zm4 8h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-16 4h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h12v2H16v-2zm-8 4h2v2H8v-2zm4 0h16v2H12v-2z" />
+        <path d="M34 6H6C3.79 6 2 7.79 2 10V30C2 32.21 3.79 34 6 34H34C36.21 34 38 32.21 38 30V10C38 7.79 36.21 6 34 6ZM6 8H34C35.1 8 36 8.9 36 10V30C36 31.1 35.1 32 34 32H6C4.9 32 4 31.1 4 30V10C4 8.9 4.9 8 6 8ZM8 12H12V14H8V12ZM14 12H18V14H14V12ZM20 12H24V14H20V12ZM26 12H30V14H26V12ZM32 12H34V14H32V12ZM8 16H10V18H8V16ZM12 16H28V18H12V16ZM30 16H32V18H30V16ZM8 20H12V22H8V20ZM14 20H26V22H14V20ZM28 20H32V22H28V20ZM10 24H30V26H10V24Z" />
       </svg>
     ),
-    title: "Keyboard Shortcuts & Performance",
+    title: "Complete Keyboard Navigation",
     paragraph:
-      "Full keyboard navigation with shortcuts: Ctrl/Cmd + K to focus search, Ctrl/Cmd + R for random, Enter to select. Lightning fast with optimized search, smart caching, and XSS protection.",
+      "Full keyboard navigation with shortcuts: Ctrl/Cmd + R for random, Ctrl/Cmd + F to favorite, Ctrl/Cmd + B to browse favorites, Ctrl/Cmd + O to toggle overlay. Lightning fast with optimized search, smart caching, and XSS protection.",
   },
   {
     id: 6,
@@ -97,17 +97,32 @@ const featuresData: Feature[] = [
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
           opacity="0.5"
-          d="M20 5C27.732 5 34 11.268 34 19s-6.268 14-14 14S6 26.732 6 19 12.268 5 20 5zm0 4c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S25.523 9 20 9z"
+          d="M8 6H32C33.1 6 34 6.9 34 8V32C34 33.1 33.1 34 32 34H8C6.9 34 6 33.1 6 32V8C6 6.9 6.9 6 8 6Z"
         />
-        <path d="M20 1C30.493 1 39 9.507 39 20s-8.507 19-19 19S1 30.493 1 20 9.507 1 20 1zm0 4C11.716 5 5 11.716 5 20s6.716 15 15 15 15-6.716 15-15S28.284 5 20 5zm0 8c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7zm0 2c-2.761 0-5 2.239-5 5s2.239 5 5 5 5-2.239 5-5-2.239-5-5-5z" />
+        <path d="M32 4H8C5.79 4 4 5.79 4 8V32C4 34.21 5.79 36 8 36H32C34.21 36 36 34.21 36 32V8C36 5.79 34.21 4 32 4ZM8 6H32C33.1 6 34 6.9 34 8V32C34 33.1 33.1 34 32 34H8C6.9 34 6 33.1 6 32V8C6 6.9 6.9 6 8 6ZM20 10C19.45 10 19 10.45 19 11V29C19 29.55 19.45 30 20 30C20.55 30 21 29.55 21 29V11C21 10.45 20.55 10 20 10ZM10 14H18V16H10V14ZM22 14H30V16H22V14ZM10 18H18V20H10V18ZM22 18H30V20H22V18ZM10 22H18V24H10V22ZM22 22H30V24H22V22Z" />
+      </svg>
+    ),
+    title: "Interactive Tutorial System",
+    paragraph:
+      "7-step guided tutorial for new users with smart onboarding, welcome notifications, and tutorial reset features. Learn all features quickly with interactive tips and step-by-step guidance.",
+  },
+  {
+    id: 8,
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M6 8H34C35.1 8 36 8.9 36 10V32C36 33.1 35.1 34 34 34H6C4.9 34 4 33.1 4 32V10C4 8.9 4.9 8 6 8Z"
+        />
+        <path d="M34 6H6C2.69 6 0 8.69 0 12V32C0 35.31 2.69 38 6 38H34C37.31 38 40 35.31 40 32V12C40 8.69 37.31 6 34 6ZM6 8H34C35.1 8 36 8.9 36 10V32C36 33.1 35.1 34 34 34H6C4.9 34 4 33.1 4 32V10C4 8.9 4.9 8 6 8ZM8 12H32V14H8V12ZM8 16H28V18H8V16ZM8 20H30V22H8V20ZM8 24H26V26H8V24ZM8 28H24V30H8V28Z" />
       </svg>
     ),
     title: "Massive Database",
     paragraph:
-      "Browse through the top 250,000 SFW subreddits with regular database updates. Premium users get access to 10,000+ curated NSFW communities and creators with karma-based filtering.",
+      "Browse through 250,000 SFW subreddits with regular database updates. Premium users get access to 80,000+ curated NSFW communities and 7,000+ creators with karma-based filtering.",
   },
   {
-    id: 8,
+    id: 9,
     icon: (
       <svg width="40" height="45" viewBox="0 0 40 45" className="fill-current">
         <path
@@ -122,7 +137,7 @@ const featuresData: Feature[] = [
       "Perfect for discovering niche communities, finding content creators you'd never see otherwise, and adding variety to your Reddit experience. Ideal for researchers and content creators seeking inspiration.",
   },
   {
-    id: 9,
+    id: 10,
     icon: (
       <svg width="40" height="42" viewBox="0 0 40 42" className="fill-current">
         <path
@@ -135,6 +150,36 @@ const featuresData: Feature[] = [
     title: "Advanced Filtering Options",
     paragraph:
       "Filters include subscriber counts, top posts in given time period, and NSFW Mode for premium users. Find tiny communities with under 1,000 members or massive ones with over 1 million.",
+  },
+  {
+    id: 11,
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M35 5H5C2.24 5 0 7.24 0 10v20c0 2.76 2.24 5 5 5h30c2.76 0 5-2.24 5-5V10c0-2.76-2.24-5-5-5zM8 25c-1.1 0-2-.9-2-2v-6c0-1.1.9-2 2-2s2 .9 2 2v6c0 1.1-.9 2-2 2zm6 0c-1.1 0-2-.9-2-2v-6c0-1.1.9-2 2-2s2 .9 2 2v6c0 1.1-.9 2-2 2zm6 0c-1.1 0-2-.9-2-2v-6c0-1.1.9-2 2-2s2 .9 2 2v6c0 1.1-.9 2-2 2z"
+        />
+        <path d="M5 2C1.13 2 0 3.13 0 7v26c0 3.87 1.13 5 5 5h30c3.87 0 5-1.13 5-5V7c0-3.87-1.13-5-5-5H5zm30 5v26H5V7h30zM26 15h8v2h-8v-2zm0 4h8v2h-8v-2zm0 4h8v2h-8v-2zm0-12h8v2h-8v-2z" />
+      </svg>
+    ),
+    title: "Custom Reddit Feed",
+    paragraph:
+      "Generate personalized Reddit multifeed URLs from your favorites. Click to create custom feeds that combine all your saved subreddits into one convenient browsing experience, perfect for staying updated on your favorite communities.",
+  },
+  {
+    id: 12,
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
+        <path
+          opacity="0.5"
+          d="M20 5C27.732 5 34 11.268 34 19s-6.268 14-14 14S6 26.732 6 19 12.268 5 20 5zm0 4c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S25.523 9 20 9z"
+        />
+        <path d="M35 17.5h-4.5c-.828 0-1.5.672-1.5 1.5v2c0 .828.672 1.5 1.5 1.5H35c.828 0 1.5-.672 1.5-1.5v-2c0-.828-.672-1.5-1.5-1.5zM9.5 17.5H5c-.828 0-1.5.672-1.5 1.5v2c0 .828.672 1.5 1.5 1.5h4.5c.828 0 1.5-.672 1.5-1.5v-2c0-.828-.672-1.5-1.5-1.5zM22.5 5v4.5c0 .828-.672 1.5-1.5 1.5h-2c-.828 0-1.5-.672-1.5-1.5V5c0-.828.672-1.5 1.5-1.5h2c.828 0 1.5.672 1.5 1.5zM22.5 30.5V35c0 .828-.672 1.5-1.5 1.5h-2c-.828 0-1.5-.672-1.5-1.5v-4.5c0-.828.672-1.5 1.5-1.5h2c.828 0 1.5.672 1.5 1.5zM28.889 8.54l3.182-3.182c.586-.586 1.536-.586 2.122 0l1.414 1.414c.586.586.586 1.536 0 2.122L32.425 12.076c-.586.586-1.536.586-2.122 0l-1.414-1.414c-.586-.586-.586-1.536 0-2.122zM11.111 31.46l-3.182 3.182c-.586.586-1.536.586-2.122 0L4.393 33.228c-.586-.586-.586-1.536 0-2.122l3.182-3.182c.586-.586 1.536-.586 2.122 0l1.414 1.414c.586.586.586 1.536 0 2.122zM31.46 28.889l3.182 3.182c.586.586.586 1.536 0 2.122l-1.414 1.414c-.586.586-1.536.586-2.122 0l-3.182-3.182c-.586-.586-.586-1.536 0-2.122l1.414-1.414c.586-.586 1.536-.586 2.122 0zM8.54 11.111L5.358 7.929c-.586-.586-.586-1.536 0-2.122L6.772 4.393c.586-.586 1.536-.586 2.122 0l3.182 3.182c.586.586.586 1.536 0 2.122L10.662 11.111c-.586.586-1.536.586-2.122 0z" />
+      </svg>
+    ),
+    title: "Full Customization Settings",
+    paragraph:
+      "Customize overlay appearance, position, and size to match your browsing style. Personalize keyboard shortcuts, adjust notification preferences, and configure extension behavior to create your perfect Reddit discovery experience.",
   },
 ];
 export default featuresData;
