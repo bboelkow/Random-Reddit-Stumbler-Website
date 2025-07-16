@@ -5,6 +5,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import FAQ from "@/components/FAQ";
+import Disclaimer from "@/components/Disclaimer";
 // import Blog from "@/components/Blog";
 // import Brands from "@/components/Brands";
 // import Contact from "@/components/Contact";
@@ -26,6 +27,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <FAQ />
+      <Disclaimer />
       {/* <Brands /> */}
       {/* <Blog /> */}
       {/* <Contact /> */}
