@@ -93,7 +93,7 @@ const Hero = () => {
                   muted 
                   playsInline
                 >
-                  <source src="/images/hero/RRS 1.3.0 Promo for Website2_compressed.mp4" type="video/mp4" />
+                  <source src="/images/hero/RRS 1.3.0 Promo for Website2_compressedMORE.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

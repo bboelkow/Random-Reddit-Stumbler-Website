@@ -8,7 +8,7 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">          <SectionTitle
             title="Simple and Affordable Premium Pricing"
-            paragraph="Random Reddit Stumbler is free with advanced features! Premium users unlock NSFW mode and NSFW Creator mode, accessing 10,000+ carefully curated NSFW subreddits and creators. Enjoy advanced search through ALL subreddits (SFW + NSFW), multiple specialized favorites lists, and age-verified content for adults only."
+            paragraph="Random Reddit Stumbler is free with advanced features! Premium users unlock NSFW mode and NSFW Creator mode, accessing 80,000+ carefully curated NSFW subreddits and 7,000+ creators. Enjoy advanced search through ALL subreddits (SFW + NSFW), multiple specialized favorites lists, and age-verified content for adults only."
             center
             width="665px"
           />

@@ -94,17 +94,17 @@ const faqData = [
   {
     id: 3,
     question: "Is Random Reddit Stumbler free?",
-    answer: "Yes! Random Reddit Stumbler is completely free with all core features included. We offer an optional Premium upgrade that unlocks NSFW content and additional advanced features for users who want the complete experience."
+    answer: "Yes! Random Reddit Stumbler is completely free with all core features included. We offer an optional Premium upgrade that unlocks NSFW content and additional advanced features for users who want the complete experience. Check out the features section on this page for more details on the differences between the free and Premium versions."
   },
   {
     id: 4,
     question: "What's included in Premium?",
-    answer: "Premium users get access to NSFW subreddit discovery, NSFW creator mode with 10,000+ curated creators, advanced search through ALL subreddits (SFW + NSFW), and specialized favorites lists for adult content."
+    answer: "Premium users get access to NSFW Mode featuring 80,000 NSFW subreddits, NSFW creator mode with 7,000+ curated creators, advanced search through ALL subreddits (SFW + NSFW), and specialized favorites lists for adult content."
   },
   {
     id: 5,
     question: "How many subreddits can I discover?",
-    answer: "Our database includes over 270,000+ active subreddits/creators! The free version gives you access to all SFW communities, while Premium adds access to NSFW subreddits and NSFW Creators as well."
+    answer: "Our database includes over 250,000 active SFW subreddits! The free version gives you access to all SFW communities, while Premium adds access to 80,000 NSFW subreddits and 7,000 NSFW Creators as well."
   },
   {
     id: 6,
@@ -120,7 +120,7 @@ const faqData = [
         >
           Orion Mobile Browser for iOS
         </a>
-        . With Orion Browser on iOS, the browser extension functions exactly as it does on desktop browsers. Users have reported to be able to get Random Reddit Stumbler working on Android mobile browsers that support chrome extensions but we can not guarantee full functionality as we have yet to test them. A mobile application is planned for the future.
+        . With Orion Browser on iOS, the browser extension functions exactly as it does on desktop browsers with the exception to premium features. The functionality of premium features on Orion Browser for iOS is actively being worked on. Users have reported to be able to get Random Reddit Stumbler working on Android mobile browsers that support chrome extensions but we can not guarantee full functionality as we have yet to test them. A mobile application is planned for the future.
       </>
     )
   },

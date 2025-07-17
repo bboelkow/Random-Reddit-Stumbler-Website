@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
     ),
     title: "One-Click Random Exploration",
     paragraph:
-      "Click the random subreddit button to instantly jump to a random subreddit using the random subreddit generator — no login needed! Switch between subreddit and creator discovery modes to find a truly random reddit page.",
+      "Click the random subreddit button to instantly jump to a random subreddit using the random subreddit generator — no login needed! Premium users can switch between SFW mode, NSFW mode, and creator discovery modes to find a truly random reddit page.",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const featuresData: Feature[] = [
     ),
     title: "Advanced Search & Real-Time Discovery",
     paragraph:
-      "Real-time subreddit search with highlighted results, smart sorting, and comprehensive keyboard shortcuts (Ctrl/Cmd + K to focus, Enter to select). The search results show all subreddits with your keyword, not just a couple like Reddit's search.",
+      "Real-time subreddit search with highlighted results, and smart sorting. The search results show all subreddits with your keyword, not just a couple like Reddit's search. For example, a simple search of the word 'cat' shows 2,600+ results.",
   },
   {
     id: 3,
@@ -179,7 +179,7 @@ const featuresData: Feature[] = [
     ),
     title: "Full Customization Settings",
     paragraph:
-      "Customize overlay appearance, position, and size to match your browsing style. Personalize keyboard shortcuts, adjust notification preferences, and configure extension behavior to create your perfect Reddit discovery experience.",
+      "Customize overlay appearance and size to match your browsing style. Personalize keyboard shortcuts and configure extension behavior to create your perfect Reddit discovery experience.",
   },
 ];
 export default featuresData;
