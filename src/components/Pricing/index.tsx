@@ -5,8 +5,18 @@ import PricingBox from "./PricingBox";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
-      <div className="container">          <SectionTitle
+    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28 bg-gradient-to-b from-gray-50 via-white to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden">
+        {/* Background gradient elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute left-0 top-0 -translate-x-1/4 -translate-y-1/4">
+            <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-br from-orange-500/15 to-orange-600/15 blur-3xl dark:from-orange-600/10 dark:to-orange-700/10"></div>
+          </div>
+          <div className="absolute right-0 bottom-0 translate-x-1/4 translate-y-1/4">
+            <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-orange-500/15 to-orange-600/15 blur-3xl dark:from-orange-600/10 dark:to-orange-700/10"></div>
+          </div>
+        </div>
+        
+      <div className="container relative">          <SectionTitle
             title="Simple and Affordable Premium Pricing"
             paragraph="Random Reddit Stumbler is free with advanced features! Premium users unlock NSFW mode and NSFW Creator mode, accessing 80,000+ carefully curated NSFW subreddits and 7,000+ creators. Enjoy advanced search through ALL subreddits (SFW + NSFW), multiple specialized favorites lists, and age-verified content for adults only."
             center
@@ -59,60 +69,7 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 z-[-1]">
-        <svg
-          width="239"
-          height="601"
-          viewBox="0 0 239 601"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            opacity="0.3"
-            x="-184.451"
-            y="600.973"
-            width="196"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -184.451 600.973)"
-            fill="url(#paint0_linear_93:235)"
-          />
-          <rect
-            opacity="0.3"
-            x="-188.201"
-            y="385.272"
-            width="59.7544"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -188.201 385.272)"
-            fill="url(#paint1_linear_93:235)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_93:235"
-              x1="-90.1184"
-              y1="420.414"
-              x2="-90.1184"
-              y2="1131.65"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_93:235"
-              x1="-159.441"
-              y1="204.714"
-              x2="-159.441"
-              y2="915.952"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+
     </section>
   );
 };

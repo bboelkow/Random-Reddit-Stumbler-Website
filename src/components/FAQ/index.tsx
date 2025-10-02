@@ -1,4 +1,7 @@
+'use client';
+
 import SectionTitle from "../Common/SectionTitle";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const faqData = [
   {
@@ -139,7 +142,16 @@ const faqData = [
 const FAQ = () => {
   return (
     <>
-      <section id="faq" className="relative z-10 py-16 md:py-20 lg:py-28">
+      <section className="relative z-20 overflow-hidden bg-gradient-to-b from-white via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+        {/* Background gradient elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute right-0 top-0 -translate-y-1/4 translate-x-1/4">
+            <div className="w-96 h-96 rounded-full bg-gradient-to-br from-orange-500/20 to-orange-600/20 blur-3xl dark:from-orange-600/10 dark:to-orange-700/10"></div>
+          </div>
+          <div className="absolute left-0 bottom-0 translate-y-1/4 -translate-x-1/4">
+            <div className="w-96 h-96 rounded-full bg-gradient-to-tr from-orange-500/20 to-orange-600/20 blur-3xl dark:from-orange-600/10 dark:to-orange-700/10"></div>
+          </div>
+        </div>
         <div className="container">
           <SectionTitle
             title="Frequently Asked Questions"
@@ -150,77 +162,31 @@ const FAQ = () => {
 
           <div className="mx-auto max-w-6xl">
             <div className="grid gap-8 md:gap-10 lg:grid-cols-2 lg:gap-x-12">
-              {faqData.map((faq) => (
-                <div
-                  key={faq.id}
-                  className="rounded-lg bg-white p-6 shadow-two dark:bg-gray-dark dark:shadow-three md:p-8"
-                >
-                  <h3 className="mb-4 text-xl font-bold leading-tight text-black dark:text-white sm:text-2xl">
-                    {faq.question}
-                  </h3>
-                  <p className="text-base leading-relaxed text-body-color dark:text-gray-300">
-                    {typeof faq.answer === 'string' ? faq.answer : faq.answer}
-                  </p>
-                </div>
-              ))}
+              {faqData.map((faq, index) => {
+                const [ref, isVisible] = useScrollReveal() as [React.RefObject<HTMLDivElement>, boolean];
+                return (
+                  <div
+                    key={faq.id}
+                    ref={ref}
+                    className={`transform rounded-lg bg-white p-6 shadow-two dark:bg-gray-dark dark:shadow-three md:p-8 transition-all duration-1000 ${
+                      isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                    }`}
+                    style={{ transitionDelay: `${index * 0.1}s` }}
+                  >
+                    <h3 className="mb-4 text-xl font-bold leading-tight text-black dark:text-white sm:text-2xl">
+                      {faq.question}
+                    </h3>
+                    <p className="text-base leading-relaxed text-body-color dark:text-gray-300">
+                      {typeof faq.answer === 'string' ? faq.answer : faq.answer}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 z-[-1]">
-          <svg
-            width="239"
-            height="601"
-            viewBox="0 0 239 601"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              opacity="0.3"
-              x="-184.451"
-              y="600.973"
-              width="196"
-              height="541.607"
-              rx="2"
-              transform="rotate(-128.7 -184.451 600.973)"
-              fill="url(#paint0_linear_93:235)"
-            />
-            <rect
-              opacity="0.3"
-              x="-188.201"
-              y="385.272"
-              width="59.7544"
-              height="541.607"
-              rx="2"
-              transform="rotate(-128.7 -188.201 385.272)"
-              fill="url(#paint1_linear_93:235)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_93:235"
-                x1="-90.1184"
-                y1="420.414"
-                x2="-90.1184"
-                y2="1131.65"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_93:235"
-                x1="-159.441"
-                y1="204.714"
-                x2="-159.441"
-                y2="915.952"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+
       </section>
     </>
   );

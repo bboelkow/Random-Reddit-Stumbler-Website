@@ -10,7 +10,7 @@ export default function Video() {
 
   return (
     <>
-      <section className="relative z-10 py-16 md:py-20 lg:py-28">
+      <section className="relative z-10 py-16 md:py-20 lg:py-28 bg-gradient-to-b from-white via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden">
         <div className="container">
           <SectionTitle
             title="See Random Reddit Stumbler in Action"
@@ -23,28 +23,34 @@ export default function Video() {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[1000px] overflow-hidden rounded-md">
-                <div className="relative aspect-video items-center justify-center">
+                <div className="relative aspect-video items-center justify-center group">
                   {!isPlaying ? (
                     <>
-                      <img
-                        src="https://img.youtube.com/vi/45TGyuznh7w/hqdefault.jpg"
-                        alt="YouTube video thumbnail"
-                        className="object-cover w-full h-full"
-                        style={{ display: "block" }}
-                      />
+                      <div className="relative w-full h-full overflow-hidden rounded-xl">
+                        <Image
+                          src="/images/video/RRS 1.3.0 website thumbnail.jpg"
+                          alt="Random Reddit Stumbler Demo Video"
+                          className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105"
+                          width={1920}
+                          height={1080}
+                          priority
+                        />
+                        <div className="absolute inset-0 bg-black/20 transition-opacity group-hover:opacity-0"></div>
+                      </div>
                       <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
                         <button
-                          aria-label="video play button"
+                          aria-label="Play video"
                           onClick={() => setPlaying(true)}
-                          className="text-primary flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white/75 transition hover:bg-white"
+                          className="group/btn relative flex h-20 w-20 items-center justify-center rounded-full bg-white/90 shadow-xl transition-all duration-300 hover:bg-white hover:scale-110"
                         >
+                          <div className="absolute inset-0 rounded-full bg-orange-500/20 animate-ping"></div>
                           <svg
-                            width="16"
-                            height="18"
-                            viewBox="0 0 16 18"
-                            className="fill-current"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            className="fill-orange-600 relative ml-1"
                           >
-                            <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
+                            <path d="M8 5v14l11-7z" />
                           </svg>
                         </button>
                       </div>
@@ -66,7 +72,14 @@ export default function Video() {
             </div>
           </div>
 
-          <div className="absolute right-0 bottom-0 left-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute left-0 top-0 -translate-x-1/4 -translate-y-1/4">
+              <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-br from-orange-500/10 to-orange-600/10 blur-3xl dark:from-orange-600/5 dark:to-orange-700/5"></div>
+            </div>
+            <div className="absolute right-0 bottom-0 translate-x-1/4 translate-y-1/4">
+              <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-orange-500/10 to-orange-600/10 blur-3xl dark:from-orange-600/5 dark:to-orange-700/5"></div>
+            </div>
+          </div>
         </div>
       </section>
     </>

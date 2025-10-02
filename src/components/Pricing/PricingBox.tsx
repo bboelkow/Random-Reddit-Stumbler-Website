@@ -1,3 +1,7 @@
+'use client';
+
+import Link from "next/link";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import React from "react";
 
 const PricingBox = (props: {
@@ -20,9 +24,13 @@ const PricingBox = (props: {
 
 
 
+  const [ref, isVisible] = useScrollReveal() as [React.RefObject<HTMLDivElement>, boolean];
+
   return (
-    <div className="w-full">
-      <div className="shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xs bg-white px-8 py-10">
+    <div className="w-full" ref={ref}>
+      <div className={`shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xs bg-white px-8 py-10 transform transition-all duration-1000 ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+      }`}>
         <div className="flex items-center justify-between">
           <h3 className="price mb-2 text-[32px] font-bold text-black dark:text-white">
             ${price}
