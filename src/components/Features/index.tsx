@@ -25,7 +25,7 @@ const Features = () => {
               Main Features
             </h2>
             <p className="text-base text-gray-600 dark:text-gray-400 md:text-lg">
-              Discover Reddit's hidden gems with multiple Reddit enhancing features! Enhance your Reddit experience by utilizing an advanced overlay system, keyboard shortcuts, custom subreddit favorites lists, custom feeds, a better search bar, and much more! Browse randomly through 250,000+ SFW subreddits and 80,000+ NSFW communities with lightning-fast performance and enhanced security features.
+              Discover Reddit's hidden gems with multiple Reddit enhancing features! Enhance your Reddit experience with an advanced overlay system, customizable keyboard shortcuts in Firefox and Chromium-based browsers, custom subreddit favorites lists, custom feeds, a better search bar, and much more. Browse randomly through 250,000+ SFW subreddits and 80,000+ NSFW communities with lightning-fast performance and enhanced security features.
             </p>
           </div>
 

@@ -39,10 +39,10 @@ const Pricing = () => {
             <OfferList text="NSFW Creator Mode" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Premium"
-            price="0.99"
+            packageName="Premium Monthly"
+            price="4.99"
             duration="month"
-            subtitle="$0.99/month or $4.99/year. Save 50% with yearly billing."
+            subtitle="$4.99/month. Cancel anytime."
           >
             <OfferList text="NSFW Mode (80,000+ subreddits)" status="active" />
             <OfferList text="NSFW Creator Mode (7,000+ creators)" status="active" />
@@ -53,10 +53,10 @@ const Pricing = () => {
             <OfferList text="Lifetime Access" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Lifetime"
+            packageName="Premium Lifetime"
             price="9.99"
             duration="lifetime"
-            subtitle="One-time payment. Best value."
+            subtitle="One-time $9.99 payment. Best value."
           >
             <OfferList text="NSFW Mode (80,000+ subreddits)" status="active" />
             <OfferList text="NSFW Creator Mode (7,000+ creators)" status="active" />

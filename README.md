@@ -12,11 +12,11 @@ Random Reddit Stumbler is a browser extension that helps you discover Reddit's h
 - **Smart Filtering**: Filter by community size to find exactly what you're looking for
 - **Advanced Favorites System**: Save discoveries with multiple favorites lists for SFW, NSFW subreddits, and NSFW creators
 - **Convenient Overlay Mode**: Always-accessible overlay on any Reddit page with responsive design and mode indicators
-- **Keyboard Navigation**: Full keyboard support with shortcuts (Ctrl/Cmd + K to focus, Ctrl/Cmd + R for random)
+- **Keyboard Navigation**: Full keyboard support with customizable shortcuts in Firefox and Chromium-based browsers
 - **Theme & Accessibility**: Dark/Light mode toggle with screen reader support and responsive design
 - **Massive Database**: Browse 250,000+ SFW subreddits with regular updates
 - **Performance & Security**: Lightning-fast search with XSS protection and optimized caching
-- **Premium Features**: NSFW mode and creator mode with 10,000+ curated communities (optional premium upgrade)
+- **Premium Features**: NSFW mode and creator mode with optional Premium plans ($4.99/month or $9.99 lifetime)
 
 ## 🛠️ Website Tech Stack
 - Next.js 15.x

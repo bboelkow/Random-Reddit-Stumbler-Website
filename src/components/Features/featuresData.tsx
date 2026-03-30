@@ -74,7 +74,7 @@ const featuresData: Feature[] = [
     ),
     title: "Complete Keyboard Navigation",
     paragraph:
-      "Full keyboard navigation with shortcuts: Ctrl/Cmd + R for random, Ctrl/Cmd + F to favorite, Ctrl/Cmd + B to browse favorites, Ctrl/Cmd + O to toggle overlay. Lightning fast with optimized search, smart caching, and XSS protection.",
+      "Full keyboard navigation with customizable shortcuts in both Firefox and Chromium-based browsers. Set your own key bindings for random discovery, favorites, and overlay actions. Lightning fast with optimized search, smart caching, and XSS protection.",
   },
   {
     id: 6,

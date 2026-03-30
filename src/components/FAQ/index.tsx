@@ -97,12 +97,12 @@ const faqData = [
   {
     id: 3,
     question: "Is Random Reddit Stumbler free?",
-    answer: "Yes! Random Reddit Stumbler is completely free with all core features included. We offer an optional Premium upgrade that unlocks NSFW content and additional advanced features for users who want the complete experience. Check out the features section on this page for more details on the differences between the free and Premium versions."
+    answer: "Yes! Random Reddit Stumbler has a fully functional free tier with core features included. We also offer optional Premium plans: $4.99/month or a $9.99 lifetime unlock. Premium adds NSFW content and additional advanced features for users who want the complete experience."
   },
   {
     id: 4,
     question: "What's included in Premium?",
-    answer: "Premium users get access to NSFW Mode featuring 80,000 NSFW subreddits, NSFW creator mode with 7,000+ curated creators, advanced search through ALL subreddits (SFW + NSFW), and specialized favorites lists for adult content."
+    answer: "Premium users get access to NSFW Mode featuring 80,000 NSFW subreddits, NSFW creator mode with 7,000+ curated creators, advanced search through ALL subreddits (SFW + NSFW), and specialized favorites lists for adult content. Premium is available as either $4.99/month or a one-time $9.99 lifetime purchase."
   },
   {
     id: 5,
@@ -134,6 +134,11 @@ const faqData = [
   },
   {
     id: 8,
+    question: "Are keyboard shortcuts customizable?",
+    answer: "Yes. You can customize keyboard shortcuts in both Firefox and Chromium-based browsers to match your workflow."
+  },
+  {
+    id: 9,
     question: "How often is the subreddit database updated?",
     answer: "We update our databases bi-monthly to include new active subreddits and remove inactive ones (Reddit is quick with banning and removing subreddits). This ensures you're always discovering fresh, active communities with real engagement."
   }
